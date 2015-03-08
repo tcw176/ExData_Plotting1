@@ -1,3 +1,9 @@
+Notes on how to run the R code:
+
+The data file must be downloaded, unzipped and put into the working directory.
+
+You have to install the lubriate, plyr and dplyr packages to run the R code.
+
 ## Introduction
 
 This assignment uses data from
