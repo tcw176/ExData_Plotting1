@@ -17,7 +17,6 @@ plot(data2$DateTime, data2$Global_active_power, cex.lab = 1 , cex.axis = 1,
 plot(data2$DateTime, data2$Voltage, type = "l", xlab = "datetime", ylab = "Voltage", 
      cex.axis = 1, cex.lab = 1)
 
-
 plot(data2$DateTime, data2$Sub_metering_1, type = "l", ylim = c(0,40),
      cex.axis = 1, cex.lab = 1,
      xlab = "", ylab = "Energy Sub metering")
