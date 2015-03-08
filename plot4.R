@@ -27,8 +27,9 @@ plot(data2$DateTime, data2$Sub_metering_3, type = "l", ylim = c(0,40),
      cex.axis = 0.75, cex.lab = 0.75,
      col = "blue", xlab = "", ylab = "")
 
-legend("topright", legend = c("Sub_metering_1  ", "Sub_metering_2  ",                      
-      "Sub_metering_3  "), cex = 0.7, col = c("black", "red", "blue"), 
+legend("topright", legend = c("Sub_metering_1                  ", "Sub_metering_2              ",                      
+      "Sub_metering_3             "), 
+      y.intersp = 1.3, cex = 0.75, col = c("black", "red", "blue"), 
       bty = "n", lty = c(1, 1, 1))
 
 plot(data2$DateTime, data2$Global_reactive_power, type = "l", xlab = "datetime",
