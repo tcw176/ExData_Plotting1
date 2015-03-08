@@ -17,6 +17,7 @@ plot(data2$DateTime, data2$Global_active_power, cex.lab = 1 , cex.axis = 1,
 plot(data2$DateTime, data2$Voltage, type = "l", xlab = "datetime", ylab = "Voltage", 
      cex.axis = 1, cex.lab = 1)
 
+
 plot(data2$DateTime, data2$Sub_metering_1, type = "l", ylim = c(0,40),
      cex.axis = 1, cex.lab = 1,
      xlab = "", ylab = "Energy Sub metering")
@@ -30,11 +31,11 @@ plot(data2$DateTime, data2$Sub_metering_3, type = "l", ylim = c(0,40),
      col = "blue", xlab = "", ylab = "")
 
 legend("topright", legend = c("Sub_metering_1", "Sub_metering_2",                      
-      "Sub_metering_3"), y.intersp = 1.3, cex = 0.75, col = c("black", "red", "blue"), 
+      "Sub_metering_3"), y.intersp = 1, cex = 0.9, col = c("black", "red", "blue"), 
       bty = "n", lty = c(1, 1, 1))
 
 plot(data2$DateTime, data2$Global_reactive_power, type = "l", xlab = "datetime",
-     ylab = "Global_reactive_power", cex.axis = 0.6, cex.lab = 1)
+     ylab = "Global_reactive_power", cex.axis = 1, cex.lab = 1)
 
 #dev.copy(png, file = "plot4.png")
 dev.off()
