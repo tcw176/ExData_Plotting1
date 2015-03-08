@@ -1,4 +1,7 @@
 library(lubridate)
+library(plyr)
+library(dplyr)
+
 data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?")
 data$Date <- dmy(data$Date)
 data2 <- filter(data, data$Date == ymd("2007-02-01") | data$Date == ymd("2007-02-02"))
@@ -18,5 +21,6 @@ plot(data2$DateTime, data2$Sub_metering_3, type = "l", ylim = c(0,40),
 
 legend("topright", legend = c("Sub_metering_1  ", "Sub_metering_2  ", 
       "Sub_metering_3  "), cex = 0.7, col = c("black", "red", "blue"), lty = c(1, 1, 1))
+
 dev.copy(png, file = "plot3.png")
 dev.off()
